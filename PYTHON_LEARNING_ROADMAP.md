@@ -14,10 +14,10 @@
 | Stage 3 | 数据容器（列表、元组、字典、集合、字符串高级） | ✅ 已完成 |
 | Stage 4 | 函数（函数定义、参数、返回值、作用域） | ✅ 已完成 |
 | Stage 5 | 面向对象（类与对象、继承、多态） | ✅ 已完成 |
-| Stage 6 | 异常处理（try/except、异常捕获、自定义异常） | 📅 待学习 |
-| Stage 7 | 文件操作（文件读写、JSON、CSV） | 📅 待学习 |
-| Stage 8 | 模块与包（import、pip、第三方库） | 📅 待学习 |
-| Stage 9 | 装饰器与生成器（高级特性） | 📅 待学习 |
+| Stage 6 | 异常处理（try/except、raise） | ✅ 已完成 |
+| Stage 7 | 文件操作（读写、JSON、CSV） | ✅ 已完成 |
+| Stage 8 | 模块与包（import、pip、标准库） | ✅ 已完成 |
+| Stage 9 | 装饰器与生成器（高级特性） | ✅ 已完成 |
 | Stage 10 | 实战项目（综合运用） | 📅 待学习 |
 
 ---
@@ -142,7 +142,7 @@
 
 ---
 
-## Stage 4: 函数 🔨 进行中
+## Stage 4: 函数 ✅ 已完成
 
 ### 4.1 函数基础 ✅
 
@@ -376,19 +376,19 @@ classes:
 
 ---
 
-## Stage 9: 装饰器与生成器
-
-**📁 建议文件：** `D:\code\pythonProject\advanced\decorator_generator.py`
+**学习文件：** `D:\code\pythonProject\advanced\decorator_generator.py`
 
 **知识点：**
 ```
 1. 装饰器基础（@decorator）
-2. 带参数的装饰器
-3. functools.wraps
+2. 带参数的装饰器（repeat(n) 三层嵌套）
+3. functools.wraps 保留原函数信息
 4. 生成器（yield）
-5. 生成器表达式
-6. 迭代器协议
+5. yield from 串联生成器
+6. 无限生成器（fibonacci）
 ```
+
+**小练习：** ✅ 已完成（6题，装饰器3题+生成器3题）
 
 ---
 
@@ -423,7 +423,7 @@ classes:
 | 2026-04-24 | Stage 5.1 | class_basics.py | 四题全对，类/对象/链式调用 |
 | 2026-04-24 | Stage 5.2 | inheritance.py | 四题全对含选做，继承/多态/重写掌握 |
 | 2026-04-25 | Stage 5.3 | oop_advanced.py | 三题完成，封装/@property/运算符重载全掌握 |
-| 2026-04-25 | Stage 6 | exception_handling.py | 📅 待学习 |
+| 2026-04-27 | Stage 9 综合复习 | decorator_generator.py, comprehensive_review.py | 6题全对！装饰器+生成器+综合运用全部掌握 |
 
 ---
 

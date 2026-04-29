@@ -1,7 +1,7 @@
-# Python 学习路线规划
+﻿# Python 学习路线规划
 
 > 📅 制定日期：2026-04-19
-> 🎯 目标：从零基础到能独立完成项目
+> 🎯 目标：**Python 基础 → AI / 机器学习 → 找到 AI 相关工作**
 
 ---
 
@@ -18,7 +18,10 @@
 | Stage 7 | 文件操作（读写、JSON、CSV） | ✅ 已完成 |
 | Stage 8 | 模块与包（import、pip、标准库） | ✅ 已完成 |
 | Stage 9 | 装饰器与生成器（高级特性） | ✅ 已完成 |
-| Stage 10 | 实战项目（综合运用） | 📅 待学习 |
+| Stage 10 | AI 方向实战项目（简历项目） | 📅 待学习 |
+| Stage 11 | 机器学习基础（Scikit-learn） | 📅 待学习 |
+| Stage 12 | 深度学习（PyTorch） | 📅 待学习 |
+| Stage 13 | LLM / AI Agent（大语言模型应用） | 📅 待学习 |
 
 ---
 
@@ -77,8 +80,6 @@
 
 **小练习：** ✅ 已完成（成绩管理、推导式4题、矩阵3题、合并去重、筛选平方、正数提取）
 
----
-
 ### 3.2 元组（Tuple）✅
 
 **学习文件：** `D:\code\pythonProject\container\tuple.py`、`tuple_demo.py`
@@ -91,8 +92,6 @@
 - 函数返回多值
 
 **小练习：** ✅ 已完成（元组解包三道题）
-
----
 
 ### 3.3 字典（Dictionary）✅
 
@@ -109,8 +108,6 @@
 
 **小练习：** ✅ 已完成（个人信息、词频统计、成绩系统）
 
----
-
 ### 3.4 集合（Set）✅
 
 **学习文件：** `D:\code\pythonProject\container\set.py`、`set_demo.py`
@@ -123,8 +120,6 @@
 - 两个集合追踪重复元素
 
 **小练习：** ✅ 已完成（去重、班级统计、找重复）
-
----
 
 ### 3.5 字符串高级 ✅
 
@@ -156,8 +151,6 @@
 
 **小练习：** ✅ 已完成（打招呼、计算器、找最大值、判断奇偶）
 
----
-
 ### 4.2 函数参数 ✅
 
 **学习文件：** `D:\code\pythonProject\functions\func_param.py`
@@ -171,8 +164,6 @@
 
 **小练习：** ✅ 已完成（power、info、find_and_print）
 
----
-
 ### 4.3 变量作用域 ✅
 
 **学习文件：** `D:\code\pythonProject\functions\scope.py`
@@ -183,8 +174,6 @@
 - 函数内修改全局变量
 - 可变对象（list/dict）不需要 global
 - UnboundLocalError 的原因
-
----
 
 ### 4.4 高级函数特性 ✅
 
@@ -200,19 +189,8 @@
 **小练习：** ✅ 已完成（7题，6题直接对，1题踩坑后修复）
 
 ---
-```
 
-**题目2：Lambda 与高阶函数**
-```
-1. 用 lambda 和 map 将列表中所有数字平方
-2. 用 lambda 和 filter 找出列表中所有偶数
-3. 用 lambda 和 sort 对字典列表排序
-4. 用 reduce 计算列表所有元素的乘积
-```
-
----
-
-## Stage 5: 面向对象编程（OOP）
+## Stage 5: 面向对象编程（OOP）✅ 已完成
 
 ### 5.1 类与对象 ✅
 
@@ -229,18 +207,6 @@
 
 **小练习：** ✅ 已完成（Person、Calculator链式调用、BankAccount、Counter类属性）
 
-**📁 建议文件：** `D:\code\pythonProject\oop\class_basics.py`
-
-**知识点：**
-```
-1. 类定义 class
-2. __init__ 构造函数
-3. self 参数
-4. 实例属性 vs 类属性
-5. 实例方法 vs 类方法 vs 静态方法
-6. __str__ 和 __repr__
-```
-
 ### 5.2 继承与多态 ✅
 
 **学习文件：** `D:\code\pythonProject\oop\inheritance.py`
@@ -254,156 +220,182 @@
 
 **小练习：** ✅ 已完成（Vehicle继承、多态show_vehicle、isinstance判断、员工系统）
 
-**📁 建议文件：** `D:\code\pythonProject\oop\inheritance.py`
+### 5.3 面向对象高级 ✅
 
-**知识点：**
-```
-1. 单继承
-2. 多继承（MRO）
-3. super() 调用父类
-4. 方法重写
-5. 多态
-6. isinstance() 和 issubclass()
-```
+**学习文件：** `D:\code\pythonProject\oop\oop_advanced.py`
 
-### 5.3 面向对象高级
+**已学知识点：**
+- 封装（私有属性/方法）
+- `@property` 装饰器
+- 运算符重载（`__add__`、`__str__` 等）
+- 类属性 vs 实例属性
+- 综合运用：BankAccount + Money + StudentManager
 
-**📁 建议文件：** `D:\code\pythonProject\oop\oop_advanced.py`
-
-**知识点：**
-```
-1. 封装（私有属性/方法）
-2. @property 装饰器
-3. __slots__ 限制属性
-4. 运算符重载（__add__, __eq__ 等）
-5. 描述符
-```
-
-**🎮 实战项目：重构贪吃蛇**
-```
-用面向对象的方式重构贪吃蛇游戏：
-
-classes:
-- Game（游戏主类）
-- Snake（蛇类）
-- Food（食物类）
-- ScoreManager（分数管理类）
-
-每个类负责自己的逻辑，体现封装和模块化思想。
-```
+**小练习：** ✅ 已完成（BankAccount封装修正、Money运算符重载、StudentManager上下文管理器）
 
 ---
 
-## Stage 6: 异常处理
+## Stage 6: 异常处理 ✅ 已完成
 
-**📁 建议文件：** `D:\code\pythonProject\base\exception_handling.py`
+**学习文件：** `D:\code\pythonProject\base\exception_handling.py`
 
-**知识点：**
-```
-1. try/except/finally
-2. 多个 except
-3. except Exception as e
-4. raise 主动抛出异常
-5. 自定义异常类
-6. 常见内置异常（ValueError, TypeError, KeyError, IndexError等）
-7. 异常的最佳实践
-```
+**已学知识点：**
+- try / except / finally
+- 多个 except 与 Exception 捕获
+- raise 主动抛出
+- 自定义异常类
+- 安全设计（safe_divide、read_file_safe）
 
-**小题目：**
-
-**题目1：健壮的计算器**
-```
-写一个计算器，能处理：
-1. 除以零
-2. 输入非数字
-3. 输入运算符不合法
-4. 使用 try/except 确保程序不崩溃
-```
+**小练习：** ✅ 已完成（四题全对）
 
 ---
 
-## Stage 7: 文件操作
+## Stage 7: 文件操作 ✅ 已完成
 
-**📁 建议文件：** `D:\code\pythonProject\base\file_io.py`
+**学习文件：** `D:\code\pythonProject\base\file_io.py`
 
-**知识点：**
-```
-1. open() / close()
-2. with open() 自动关闭
-3. 读取模式 'r' / 写入模式 'w' / 追加模式 'a'
-4. read() / readline() / readlines()
-5. write() / writelines()
-6. JSON文件操作（json.load / json.dump）
-7. CSV文件操作（csv模块）
-```
+**已学知识点：**
+- 文件读写（with open / read / write）
+- write_names / read_names / file_stats / log_message
 
-**🎮 实战项目：贪吃蛇数据持久化**
-```
-给贪吃蛇添加数据保存功能：
-1. 保存最高分到文件
-2. 保存游戏设置到JSON文件
-3. 保存排行榜到CSV文件
-4. 游戏启动时自动加载设置和历史记录
-```
+**小练习：** ✅ 已完成（三题全对）
 
 ---
 
-## Stage 8: 模块与包
+## Stage 8: 模块与包 ✅ 已完成
 
-**📁 建议文件：** `D:\code\pythonProject\base\module_demo.py`
+**学习文件：** `D:\code\pythonProject\base\module_demo.py`
 
-**知识点：**
-```
-1. import 与 from...import
-2. 模块的 __name__
-3. 自定义模块
-4. 包的结构 __init__.py
-5. pip 安装第三方库
-6. 常用标准库（os, sys, time, datetime, random, collections等）
-```
+**已学知识点：**
+- os / time / datetime / random / collections.Counter
+- `__name__ == '__main__'` 入口模式
+- pip 安装第三方库
 
-**小题目：**
-
-**题目1：批量文件处理工具**
-```
-写一个文件处理工具：
-1. 列出指定目录下所有文件
-2. 统计每个文件的大小
-3. 找出最大的文件
-4. 按修改时间排序
-5. 批量重命名文件
-```
+**小练习：** ✅ 已完成（五题全对）
 
 ---
+
+## Stage 9: 装饰器与生成器 ✅ 已完成
 
 **学习文件：** `D:\code\pythonProject\advanced\decorator_generator.py`
 
-**知识点：**
-```
-1. 装饰器基础（@decorator）
-2. 带参数的装饰器（repeat(n) 三层嵌套）
-3. functools.wraps 保留原函数信息
-4. 生成器（yield）
-5. yield from 串联生成器
-6. 无限生成器（fibonacci）
-```
+**已学知识点：**
+- 装饰器基础（@decorator、@wraps）
+- 带参数装饰器（repeat(n)、timeout(seconds)）
+- functools.wraps 保留原函数信息
+- 生成器（yield、yield from）
+- 无限生成器（fibonacci）
 
 **小练习：** ✅ 已完成（6题，装饰器3题+生成器3题）
 
+**综合复习：** `D:\code\pythonProject\advanced\comprehensive_review.py` ✅ 已完成（6题全对）
+
 ---
 
-## Stage 10: 实战综合项目
+## ⭐ Stage 10: AI 方向实战项目（简历项目）📅 待学习
 
-### 项目1：贪吃蛇（升级版）
-**目标：** 完整版贪吃蛇，含所有功能
+**目标：** 完成 1-2 个能写进简历的项目，证明 AI 实战能力
 
-### 项目2：五子棋 / 俄罗斯方块
+### 项目1：数据分析 + 可视化项目 📊
+**数据集：**  Titanic 生存预测 / 电影评分 / 房价预测（Kaggle 公开数据集）
+**技术栈：** Pandas + NumPy + Matplotlib + Scikit-learn
+**内容：**
+1. 数据加载与清洗（缺失值、异常值）
+2. 探索性数据分析（EDA）+ 可视化
+3. 特征工程（编码、归一化）
+4. 训练模型（线性回归 / 逻辑回归 / 随机森林）
+5. 模型评估（准确率 / 召回率 / F1）
 
-### 项目3：命令行 Todo 应用
-**目标：** 带文件存储的命令行待办事项管理器
+**面试价值：** ⭐⭐⭐⭐⭐ 数据分析是 AI 岗位面试必考
 
-### 项目4：图片批量处理器
-**目标：** 使用 PIL 库批量处理图片
+---
+
+### 项目2：图片分类器（PyTorch）🖼️
+**数据集：** CIFAR-10 / MNIST（手写数字）
+**技术栈：** PyTorch + NumPy
+**内容：**
+1. 数据加载（Dataset / DataLoader）
+2. 构建神经网络（CNN）
+3. 训练循环（forward / backward / optimizer）
+4. 模型评估与保存
+
+**面试价值：** ⭐⭐⭐⭐⭐ 证明深度学习落地能力
+
+---
+
+### 项目3：LLM 应用 / AI Agent 🤖
+**技术栈：** OpenAI API / LangChain / RAG
+**内容：**
+1. 调用 LLM API 实现对话
+2. 构建 RAG（检索增强生成）系统
+3. 实现 AI Agent（工具调用 + 记忆）
+
+**面试价值：** ⭐⭐⭐⭐⭐ 当前最热门方向
+
+---
+
+## Stage 11: 机器学习基础（Scikit-learn）📅 待学习
+
+**📁 建议文件：** `D:\code\pythonProject\ml\scikit_learn_basics.py`
+
+**知识点：**
+```
+1. NumPy 基础（向量、矩阵运算）
+2. Pandas 数据处理
+3. Scikit-learn 使用流程（fit / predict / transform）
+4. 监督学习：线性回归、逻辑回归、决策树、随机森林
+5. 模型评估：train_test_split、cross_val_score
+6. 特征工程：标准化、编码、缺失值处理
+```
+
+**关键概念（面试重点）：**
+- 过拟合 vs 欠拟合
+- 偏差 vs 方差
+- 交叉验证
+- 混淆矩阵（Precision / Recall / F1）
+
+---
+
+## Stage 12: 深度学习（PyTorch）📅 待学习
+
+**📁 建议文件：** `D:\code\pythonProject\dl\pytorch_basics.py`
+
+**知识点：**
+```
+1. PyTorch 张量（Tensor）操作
+2. Dataset / DataLoader
+3. 构建神经网络（nn.Module）
+4. 损失函数与优化器
+5. CNN（卷积神经网络）
+6. RNN / LSTM（序列模型）
+7. 模型保存与加载
+```
+
+**关键概念（面试重点）：**
+- 反向传播（Backpropagation）
+- 梯度下降与学习率
+- Dropout / BatchNorm
+- Transformer / Attention 机制
+
+---
+
+## Stage 13: LLM / AI Agent（大语言模型应用）📅 待学习
+
+**知识点：**
+```
+1. LLM API 调用（OpenAI / Claude / 本地模型）
+2. Prompt Engineering（提示词工程）
+3. LangChain 框架
+4. RAG（检索增强生成）
+5. AI Agent（工具调用、记忆、规划）
+6. 向量数据库（Chroma / FAISS）
+```
+
+**关键概念（面试重点）：**
+- Fine-tuning vs RAG vs Prompt Engineering
+- Token 与上下文窗口
+- Function Calling / Tool Use
+- Agent ReAct 模式
 
 ---
 
@@ -423,7 +415,10 @@ classes:
 | 2026-04-24 | Stage 5.1 | class_basics.py | 四题全对，类/对象/链式调用 |
 | 2026-04-24 | Stage 5.2 | inheritance.py | 四题全对含选做，继承/多态/重写掌握 |
 | 2026-04-25 | Stage 5.3 | oop_advanced.py | 三题完成，封装/@property/运算符重载全掌握 |
-| 2026-04-27 | Stage 9 综合复习 | decorator_generator.py, comprehensive_review.py | 6题全对！装饰器+生成器+综合运用全部掌握 |
+| 2026-04-27 | Stage 6-7 | exception_handling.py, file_io.py | 异常处理+文件读写四题全对 |
+| 2026-04-27 | Stage 7-8 | json_csv.py, module_demo.py | JSON/CSV + 模块练习九题全对 |
+| 2026-04-27 | Stage 9 | decorator_generator.py | 装饰器+生成器六题全对 |
+| 2026-04-27 | 综合复习 | comprehensive_review.py | Stage 1-9 综合测验六题全对 |
 
 ---
 
@@ -433,14 +428,21 @@ classes:
 - 官方文档：https://docs.python.org/zh-cn/3/
 - 菜鸟教程：https://www.runoob.com/python3/python3-tutorial.html
 
+**AI/ML 学习资源：**
+- 吴恩达 Machine Learning（Coursera）— 机器学习入门必学
+- 李沐《动手学深度学习》— PyTorch 实战好书
+- Kaggle — 数据集 + 比赛，面试时很有说服力
+- Hugging Face — LLM / NLP 最全资源站
+
 **练习平台：**
-- LeetCode（算法）
+- LeetCode（刷算法题）
 - 菜鸟教程在线编辑器
-- 黑客松（HackerRank）
+- Kaggle（数据分析 + 机器学习）
 
 **书籍推荐：**
 - 《Python编程：从入门到实践》
-- 《Python核心编程》
+- 《机器学习实战》— sklearn 入门经典
+- 《深度学习入门：基于 Python 的理论与实现》
 
 ---
 
